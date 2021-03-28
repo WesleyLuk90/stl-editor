@@ -1,15 +1,10 @@
-import React, { ChangeEvent } from "react";
+import React from "react";
+import { Import } from "./Import";
 
 export function Controls() {
-    function onChange(e: ChangeEvent) {
-        e.persist();
-        console.log(e);
+    function onImport(file: File) {
+        console.log(file);
     }
 
-    return (
-        <div>
-            <h3>Import</h3>
-            <input type="file" onChange={onChange} />
-        </div>
-    );
+    return <Import onImport={onImport} />;
 }
