@@ -4,7 +4,7 @@ import { Renderer } from "./Renderer";
 export function Display({ renderer }: { renderer: Renderer }) {
     const containerCallback = useCallback<(node: HTMLDivElement) => void>(
         (node) => {
-            if (renderer != null) {
+            if (renderer != null && node != null) {
                 node.appendChild(renderer.renderer.domElement);
             }
         },
