@@ -9,7 +9,7 @@ export function App() {
 
     return (
         <div className="App">
-            <Controls />
+            <Controls renderer={renderer} />
             <Display renderer={renderer} />
         </div>
     );

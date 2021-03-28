@@ -8,7 +8,6 @@ export function Import({ onImport }: { onImport: (file: File) => void }) {
         }
         e.target.value = "";
     }
-
     return (
         <div>
             <h3>Import</h3>

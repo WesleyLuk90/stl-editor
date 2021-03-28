@@ -1,6 +1,5 @@
 import {
     BoxGeometry,
-    Mesh,
     MeshBasicMaterial,
     PerspectiveCamera,
     Scene,
@@ -22,8 +21,6 @@ export class Renderer {
         this.renderer.setSize(window.innerWidth, window.innerHeight);
         const geometry = new BoxGeometry();
         const material = new MeshBasicMaterial({ color: 0x00ff00 });
-        const cube = new Mesh(geometry, material);
-        this.scene.add(cube);
 
         this.camera.position.z = 5;
         this.animate();
