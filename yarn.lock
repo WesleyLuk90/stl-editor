@@ -2573,6 +2573,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/three@npm:^0.126.2":
+  version: 0.126.2
+  resolution: "@types/three@npm:0.126.2"
+  checksum: 88709dadee01517efad33eac0ee4a4995b989bcb97dacf46a58bfee8ceb589ebec60ddeb9698bf495d889b3d7b2c45f917d2e110032f50eba87c22e88337abaa
+  languageName: node
+  linkType: hard
+
 "@types/treeify@npm:^1.0.0":
   version: 1.0.0
   resolution: "@types/treeify@npm:1.0.0"
@@ -13893,10 +13900,12 @@ resolve@1.18.1:
     "@types/node": ^12.0.0
     "@types/react": ^17.0.0
     "@types/react-dom": ^17.0.0
+    "@types/three": ^0.126.2
     "@yarnpkg/pnpify": ^2.4.0
     react: ^17.0.2
     react-dom: ^17.0.2
     react-scripts: 4.0.3
+    three: ^0.126.1
     typescript: ^4.1.2
     web-vitals: ^1.0.1
   languageName: unknown
@@ -14440,6 +14449,13 @@ resolve@1.18.1:
   version: 0.2.0
   resolution: "text-table@npm:0.2.0"
   checksum: 373904ce70524ba11ec7e1905c44fb92671132d5e0b0aba2fb48057161f8bf9cbf7f6178f0adf31810150cf44fb52c7b912dc722bff3fddf9688378596dbeb56
+  languageName: node
+  linkType: hard
+
+"three@npm:^0.126.1":
+  version: 0.126.1
+  resolution: "three@npm:0.126.1"
+  checksum: de1ba579b8e499be7f45fa75773bf95d05eb9d82e4cd7db9808e6b54d5e94cbb3b78a00853c4de2643176e509e167c8d41288680e9f11cf77bf2479ed56b2ca4
   languageName: node
   linkType: hard
 
