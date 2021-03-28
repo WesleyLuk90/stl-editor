@@ -1,8 +1,7 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback } from "react";
 import { Renderer } from "./Renderer";
 
-export function Scene() {
-  const [renderer, setRenderer] = useState<null | Renderer>();
+export function Display({ renderer }: { renderer: Renderer }) {
   const containerCallback = useCallback<(node: HTMLDivElement) => void>(
     (node) => {
       if (renderer != null) {
@@ -11,11 +10,6 @@ export function Scene() {
     },
     [renderer]
   );
-
-  useEffect(() => {
-    const rend = new Renderer();
-    setRenderer(rend);
-  }, []);
 
   return <div ref={containerCallback}></div>;
 }

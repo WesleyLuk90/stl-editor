@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useMemo } from "react";
 import "./App.css";
-import { Scene } from "./Scene";
+import { Display } from "./Display";
+import { Renderer } from "./Renderer";
 
-function App() {
+export function App() {
+  const renderer = useMemo(() => new Renderer(), []);
+
   return (
     <div className="App">
-      <Scene />
+      <Display renderer={renderer} />
     </div>
   );
 }
-
-export default App;
